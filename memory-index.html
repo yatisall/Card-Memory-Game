@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Flip Me! - Hayati Salleh</title>
+
+	<!--Connect to CSS file-->
+	<link rel="stylesheet" type="text/css" href="memory-style.css">
+
+	<!--Connect to fontAwesome CDN-->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<!--Start of TOP HEADER-->
+<div class="heading">
+	<img src="img/main-logo.png" alt="Main logo">
+	<p>Match the cards and WIN the game!</p>
+</div>
+<!--End of TOP HEADER-->
+
+<!--Start of TIME & SCORE-->
+<section class="game-desc">
+	<!--Start of TIMER-->
+	<div class="time">
+	Time: <span class="timer"></span>
+	</div>
+	<!--End of TIMER-->
+
+	<!--Start of MOVES TAKEN-->
+	<div class="moves-taken">
+	Moves: <span class="movesBoard">0</span>
+	</div>
+	<!--End of MOVES TAKEN-->
+</section>
+<!--End of TIME & SCORE-->
+
+<!--Start of COMPLETE MATCH CARDS-->
+<section class="match-complete">
+	<div class="match-com">Cards Match: <span class="matches">0</span></div>
+</section>
+<!--End of COMPLETE MATCHES CARDS-->
+
+<section class="flip-game"> <!--Start of GAMEBOX SECTION-->
+	<!--Start on EYES ELIXIR card-->
+	<div class="flip-card" data-images="eyes">
+		<img class="front-view" src="img/eyes-elix.svg" alt="Eyes">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<div class="flip-card" data-images="eyes">
+		<img class="front-view" src="img/eyes-elix.svg" alt="Eyes">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<!--End on EYES ELIXIR card-->
+
+	<!--Start on HEART ELIXIR card-->
+	<div class="flip-card" data-images="heart">
+		<img class="front-view" src="img/heart-elix.svg" alt="Heart">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<div class="flip-card" data-images="heart">
+		<img class="front-view" src="img/heart-elix.svg" alt="Heart">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<!--End on HEART ELIXIR card-->
+
+	<!--Start on LUCKY ELIXIR card-->
+	<div class="flip-card" data-images="lucky">
+		<img class="front-view" src="img/lucky-elix.svg" alt="Lucky">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<div class="flip-card" data-images="lucky">
+		<img class="front-view" src="img/lucky-elix.svg" alt="Lucky">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<!--End on LUCKY ELIXIR card-->
+
+	<!--Start on MOON ELIXIR card-->
+	<div class="flip-card" data-images="moon">
+		<img class="front-view" src="img/moon-elix.svg" alt="Moon">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<div class="flip-card" data-images="moon">
+		<img class="front-view" src="img/moon-elix.svg" alt="Moon">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<!--End on MOON ELIXIR card-->
+
+	<!--Start on RAINBOW ELIXIR card-->
+	<div class="flip-card" data-images="rainbow">
+		<img class="front-view" src="img/rainbow-elix.svg" alt="Rainbow">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<div class="flip-card" data-images="rainbow">
+		<img class="front-view" src="img/rainbow-elix.svg" alt="Rainbow">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<!--End on RAINBOW ELIXIR card-->
+
+	<!--Start on SNAKE ELIXIR card-->
+	<div class="flip-card" data-images="snake">
+		<img class="front-view" src="img/snake-elix.svg" alt="Snake">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<div class="flip-card" data-images="snake">
+		<img class="front-view" src="img/snake-elix.svg" alt="Snake">
+		<img class="back-view" src="img/flipme.svg" alt="FlipMe">
+	</div>
+	<!--End on SNAKE ELIXIR card-->
+</section>
+<!--End of GAMEBOX SECTION-->
+
+<!--Start on RESET button-->
+<section class="reset">
+	<button id="reset-btn"><i class="fas fa-redo"></i></button>
+</section>
+<!--End on RESET button-->
+<br>
+<br>
+
+<!--Start on CONGRATULATIONS popup-->
+<div id="congrats" class="popup">
+	<div class="content">
+		<!--Start of CLOSE button - POPUP-->
+		<a class="close-btn" href="#">&times;</a>
+		<!--End of CLOSE button - POPUP-->
+
+		<h2>CONGRATULATIONS!!!</h2>
+		
+		<div class="content1">
+			Woohoo, you are a winner!
+		</div>
+
+		<div class="content2">
+			<p>You made <span id="finalMove"></span> moves </p>
+			<p>in <span id="finalTime"></span></p>
+		</div>
+
+		<!--Start of PLAY AGAIN button - POPUP-->
+		<button id="play-again">PLAY AGAIN ?</button>
+		<!--End of PLAY AGAIN button - POPUP-->
+	</div>
+</div>
+<!--End on CONGRATULATIONS popup-->
+
+<!--Connect to JAVASCRIPT file-->
+<script type="text/javascript" src="memory-javascript.js"></script>
+</body>
+</html>
